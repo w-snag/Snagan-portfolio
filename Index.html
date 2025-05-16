@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Digital CV | About</title>
+  <style>
+    :root {
+      --bg-primary: #1a202c;
+      --text-primary: #f7fafc;
+      --bg-secondary: #2d3748;
+      --accent-color: #81e6d9;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav {
+      background-color: var(--bg-secondary);
+      padding: 1rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+
+    .nav-link {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: var(--accent-color);
+    }
+
+    .main-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 120px 16px 40px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      color: var(--accent-color);
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .flex-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .logo-neon-ring {
+      display: inline-block;
+      padding: 10px;
+      border: 5px solid #00e5ff;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #00e5ff;
+      animation: glow 1.2s infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #00e5ff;
+      }
+      to {
+        box-shadow: 0 0 25px #00e5ff;
+      }
+    }
+
+    .profile-img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .about-text {
+      max-width: 600px;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px 5px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary {
+      background-color: var(--accent-color);
+      color: var(--bg-primary);
+    }
+
+    .btn-primary:hover {
+      background-color: #4fd1c5;
+    }
+
+    .btn-outline {
+      border: 2px solid var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    .btn-outline:hover {
+      background-color: #234e52;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-category {
+      background-color: var(--bg-secondary);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+
+    .skill-row {
+      margin-bottom: 1rem;
+    }
+
+    .skill-bar-container {
+      background-color: #4a5568;
+      border-radius: 9999px;
+      overflow: hidden;
+      height: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .skill-bar {
+      height: 10px;
+      background-color: var(--accent-color);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about" class="nav-link">About</a>
+    <a href="Interest.html" class="nav-link" target="_blank">Interests</a>
+    <a href="Projects.html" class="nav-link" target="_blank">Projects</a>
+    <a href="Contact.html" class="nav-link" target="_blank">Contact</a>
+    <a href="qualifications.html" class="nav-link" target="_blank">Qualifications</a>
+  </nav>
+
+  <div class="main-container">
+    <section id="about" class="about-section">
+      <div class="flex-row">
+        <div class="logo-neon-ring">
+          <img src="images/Image.png" alt="Profile Picture" class="profile-img">
+        </div>
+        <div class="about-text">
+          <h1 class="section-title">Hi, I'm Snagan Wimalanadan</h1>
+          <p>
+            I am a 20-year-old student of computer science at Staffordshire University, where I am working on real-world projects to obtain practical experience in databases, web technologies, software development, and problem-solving. I now have advanced skills in Python and JavaScript, as well as a strong grasp of systems design and collaboration in development settings, thanks to my training. I have a sincere love for technology and am constantly keen to pick up new skills and methods to hone my craft and create ground-breaking solutions that have an impact.
+          </p>
+          <a href="Contact.html" class="button btn-primary">Contact Me</a>
+          <a href="Projects.html" class="button btn-outline">View Work</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="Interests" class="interests-section">
+      <h2 class="section-title">My Interests</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Technical Skills</h3>
+          <div class="skill-row">Python 95%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 95%"></div></div>
+          </div>
+          <div class="skill-row">JavaScript 90%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-row">HTML 85%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-row">CSS 80%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 80%"></div></div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Professional Skills</h3>
+          <div class="skill-row">Communication 90%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-row">Teamwork 85%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-row">Problem Solving 95%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 95%"></div></div>
+          </div>
+          <div class="skill-row">Creativity 80%
+            <div class="skill-bar-container"><div class="skill-bar" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interests | My Digital CV</title>
+  <style>
+    body {
+      background-color: #1a202c;
+      color: #f7fafc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 1rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 3rem;
+      color: #81e6d9;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #81e6d9;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      .content {
+        flex-direction: row;
+      }
+    }
+
+    .left-column {
+      flex: 2;
+    }
+
+    .right-column {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: #2d3748;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+    }
+
+    .card ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+
+    .card ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .back-btn {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .back-btn a {
+      background-color: #38b2ac;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn a:hover {
+      background-color: #319795;
+    }
+
+    .image-box img {
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 300px;
+    }
+
+    /* 🔥 New Square Bounce Animation */
+    .logo-squares {
+      padding: 1rem;
+      border-radius: 1rem;
+      background: linear-gradient(45deg, #f44336, #2196f3);
+      animation: square-jump 2s infinite ease-in-out;
+    }
+
+    @keyframes square-jump {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Interests</h1>
+    <div class="content">
+      <div class="left-column">
+        <section class="card">
+          <h2>Skills</h2>
+          <ul>
+            <li>I have strong critical thinking and logical reasoning skills, allowing me to analyse problems and develop effective solutions.</li>
+            <li>I am highly adaptable and perform well in high-pressure or fast-paced environments.</li>
+            <li>My experience as a tutor has strengthened my ability to plan lessons and create structured, engaging educational content.</li>
+            <li>I am confident in public speaking and can clearly communicate complex concepts to various audiences.</li>
+            <li>I excel at multitasking and efficiently prioritising responsibilities to meet deadlines.</li>
+            <li>I handle conflicts professionally and lead with empathy and open communication.</li>
+            <li>I am proficient in using digital tools such as Microsoft Office and Google Workspace.</li>
+            <li>I have a solid foundation in basic web development, including HTML, CSS, and JavaScript.</li>
+            <li>I understand the fundamentals of databases, including writing basic SQL queries.</li>
+            <li>I am comfortable working independently and thrive in remote or self-managed work environments.</li>
+          </ul>
+        </section>
+        <section class="card">
+          <h2>Hobbies and Interests</h2>
+          <ul>
+            <li>I enjoy coding and regularly work on personal projects using Python and JavaScript to enhance my development skills.</li>
+            <li>I am passionate about football, both playing regularly and occasionally coaching younger players.</li>
+            <li>I volunteer at educational workshops where I help students improve their academic performance and learning strategies.</li>
+            <li>I enjoy playing a wide variety of games on my custom-built PC, which I optimized for performance and visuals.</li>
+            <li>In my free time, I love playing basketball as it keeps me active and helps me unwind.</li>
+            <li>I enjoy watching documentaries and series related to cybersecurity and emerging technologies.</li>
+            <li>I have an interest in exploring new tech gadgets, apps, and productivity tools.</li>
+            <li>I play strategy and puzzle games that challenge my problem-solving and critical thinking skills.</li>
+            <li>I regularly listen to podcasts about artificial intelligence, innovation, and tech trends.</li>
+            <li>I find outdoor fitness and long walks help me stay physically active and mentally refreshed.</li>
+          </ul>
+        </section>
+        <div class="back-btn">
+          <a href="index.html">Back to Home</a>
+        </div>
+      </div>
+      <div class="right-column image-box">
+        <div class="logo-squares">
+          <img src="images/image2.png" alt="Person playing basketball">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1a202c;
+  margin: 0;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 3em;
+  background: linear-gradient(90deg, #81e6d9, #38b2ac);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.mode-box, .select-box, .play-board, .result-box {
+  text-align: center;
+  margin: 10px;
+  color: #f7fafc;
+}
+
+.mode-box button, .options button, .btn button {
+  margin: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: #38b2ac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mode-box button:hover, .options button:hover, .btn button:hover {
+  background: #319795;
+}
+
+.difficulty {
+  margin-top: 10px;
+  color: #f7fafc;
+}
+
+.scoreboard {
+  display: flex;
+  gap: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #f7fafc;
+}
+
+.play-board {
+  display: none;
+}
+
+.play-board.show, .select-box.show, .result-box.show {
+  display: block;
+}
+
+.details {
+  margin-bottom: 10px;
+}
+
+.players {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: #2d3748;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.players span {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: #81e6d9;
+  position: relative;
+  z-index: 1;
+}
+
+.players .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: #38b2ac;
+  z-index: 0;
+  transition: left 0.3s;
+}
+
+.players.active .slider {
+  left: 50%;
+}
+
+.players.active span:last-child {
+  color: white;
+}
+
+.play-area section {
+  display: flex;
+}
+
+.play-area section span {
+  height: 80px;
+  width: 80px;
+  margin: 3px;
+  background: #2d3748;
+  border: 2px solid #81e6d9;
+  border-radius: 5px;
+  font-size: 36px;
+  text-align: center;
+  line-height: 80px;
+  color: #81e6d9;
+  cursor: pointer;
+}
+
+.result-box {
+  display: none;
+  padding: 20px;
+  color: #f7fafc;
+}
