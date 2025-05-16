@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowing | My Digital CV</title>
+  <style>
+    body {
+      background-color: #1a202c;
+      color: #f7fafc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+      color: #81e6d9;
+      text-align: center;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    @media(min-width: 768px) {
+      .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .left, .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .right {
+      flex-direction: column;
+    }
+
+    .glow-container {
+      padding: 10px;
+      border-radius: 50%;
+      border: 5px solid #00e5ff;
+      box-shadow: 0 0 20px #00e5ff;
+      animation: glow 1.2s infinite alternate;
+    }
+
+    .glow-container img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 10px #00e5ff;
+      }
+      to {
+        box-shadow: 0 0 25px #00e5ff;
+      }
+    }
+
+    .description {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #f7fafc;
+      background-color: #2d3748;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    /* ✅ Auto Bouncing Image with Gradient Background */
+    .bounce-container {
+      background: linear-gradient(135deg, #f44336, #2196f3);
+      padding: 10px;
+      border-radius: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      width: 100%;
+      max-width: 300px;
+      animation: bounce 1.5s infinite ease-in-out;
+    }
+
+    .bounce-container img {
+      width: 100%;
+      display: block;
+      height: auto;
+      border-radius: 1rem;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    .back-btn {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .back-btn a {
+      background-color: #38b2ac;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn a:hover {
+      background-color: #319795;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Glowing</h1>
+
+    <!-- Glowing Section -->
+    <div class="content">
+      <div class="left">
+        <div class="glow-container">
+          <img src="images/Image.png" alt="Glowing Profile Picture">
+        </div>
+      </div>
+      <div class="right">
+        <div class="description">
+          <p>
+            I created the glowing feature around a picture using CSS by wrapping the image in a styled container and applying a <code>box-shadow</code> effect with a bright color. To make the glow dynamic, I used <code>@keyframes</code> to animate the shadow, creating a pulsing light effect that smoothly expands and fades in a loop. This technique adds a modern and eye-catching visual enhancement to the image.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bouncing Section -->
+    <div class="content">
+      <div class="left">
+        <div class="bounce-container">
+          <img src="images/image2.png" alt="Bouncing Image">
+        </div>
+      </div>
+      <div class="right">
+        <div class="description">
+          <h2 style="color: #81e6d9;">Bouncing</h2>
+          <p>
+            I implemented the bouncing image effect using CSS animations by defining a <code>@keyframes</code> rule that moves the image up and down using the <code>transform: translateY()</code> property. I applied this animation on hover, so the image only starts bouncing when the user interacts with it. This subtle movement adds interactivity and liveliness to the design, making the image stand out without overwhelming the page.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-btn">
+      <a href="index.html">Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
